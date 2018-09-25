@@ -3,7 +3,7 @@
 exports[`Game component is rendering default 1`] = `
 <div>
   <header>
-    TicTacToe
+    TicTacToe  moves
     <button
       onClick={[Function]}
       type="button"
@@ -22,7 +22,7 @@ exports[`Game component is rendering default 1`] = `
 exports[`Game component is rendering draw 1`] = `
 <div>
   <header>
-    TicTacToe
+    TicTacToe  moves
     <button
       onClick={[Function]}
       type="button"
@@ -36,12 +36,6 @@ exports[`Game component is rendering draw 1`] = `
     <Board />
   </div>
   <Modal
-    names={
-      Array [
-        "juan",
-        "camilo",
-      ]
-    }
     status="draw"
   />
 </div>
@@ -50,7 +44,7 @@ exports[`Game component is rendering draw 1`] = `
 exports[`Game component is rendering error 1`] = `
 <div>
   <header>
-    TicTacToe
+    TicTacToe  moves
     <button
       onClick={[Function]}
       type="button"
@@ -64,12 +58,6 @@ exports[`Game component is rendering error 1`] = `
     <Board />
   </div>
   <Modal
-    names={
-      Array [
-        "juan",
-        "camilo",
-      ]
-    }
     status="wrong_move"
   />
 </div>
@@ -78,7 +66,7 @@ exports[`Game component is rendering error 1`] = `
 exports[`Game component is rendering winner-0 1`] = `
 <div>
   <header>
-    TicTacToe
+    TicTacToe  moves
     <button
       onClick={[Function]}
       type="button"
@@ -92,12 +80,6 @@ exports[`Game component is rendering winner-0 1`] = `
     <Board />
   </div>
   <Modal
-    names={
-      Array [
-        "juan",
-        "camilo",
-      ]
-    }
     status="winner-0"
   />
 </div>
@@ -106,7 +88,7 @@ exports[`Game component is rendering winner-0 1`] = `
 exports[`Game component is rendering winner-1 1`] = `
 <div>
   <header>
-    TicTacToe
+    TicTacToe  moves
     <button
       onClick={[Function]}
       type="button"
@@ -120,12 +102,6 @@ exports[`Game component is rendering winner-1 1`] = `
     <Board />
   </div>
   <Modal
-    names={
-      Array [
-        "juan",
-        "camilo",
-      ]
-    }
     status="winner-1"
   />
 </div>

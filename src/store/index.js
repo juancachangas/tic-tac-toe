@@ -12,11 +12,12 @@
 import { identity } from 'ramda';
 import { createStore, combineReducers } from 'redux';
 import { board } from './reducers/board';
+import { players } from './reducers/players';
 
 /* eslint-disable-next-line no-underscore-dangle */
 const devtoolExtension = (process.env.NODE_ENV !== 'production' && window.__REDUX_DEVTOOLS_EXTENSION__) || identity;
 
-const gameReducer = combineReducers({ board });
+const gameReducer = combineReducers({ board, players });
 
 export default createStore(
   gameReducer,

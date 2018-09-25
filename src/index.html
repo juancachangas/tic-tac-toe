@@ -53,6 +53,32 @@
         align-items: center;
         text-align: center;
       }
+      .Modal button {
+        background: cornflowerblue;
+        color: white;
+        border-bottom-color: darkblue;
+        box-shadow: 0px 0px 5px 2px #ddd;
+      }
+      .Modal button:disabled {
+        background: #ccc;
+        color: #666;
+        border-bottom-color: #333;
+        box-shadow: 0px 0px 5px 2px #ddd;
+      }
+      .Modal input {
+        outline: none;
+        border: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 1px solid #aaaaaa;
+        line-height: 1.5;
+
+      }
+      .Modal input:focus {
+        outline: none;
+        border-bottom: 2px solid cornflowerblue;
+        line-height: 1.5;
+      }
       .Modal.winner-0{
         border-top: 5px solid var(--color-player-0);
         border-bottom: 5px solid var(--color-player-0);

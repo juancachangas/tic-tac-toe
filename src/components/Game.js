@@ -8,11 +8,14 @@ import { connect } from 'react-redux';
 import Board from './Board';
 import Modal from './Modal';
 import { restartBoard } from '../store/actions/board';
+import { PlayerModal } from './InputModal';
 
-export const Game = ({ status, restart }) => (
+export const Game = ({
+  status, restart, turn, players,
+}) => (
   <div>
     <header>
-      TicTacToe
+      {`TicTacToe ${(players && players[+turn]) || ''} moves`}
       <button type="button" onClick={() => restart()}> New Game</button>
     </header>
 
@@ -20,16 +23,24 @@ export const Game = ({ status, restart }) => (
       <Board />
     </div>
     {
+      players && players.length < 2
+      && (
+        <PlayerModal />
+      )
+    }
+    {
       !['playing', 'new'].includes(status)
       && (
-        <Modal status={status} names={['juan', 'camilo']} />
+        <Modal status={status} names={players} />
       )
     }
   </div>
 );
 export const mapStateToProps = (state) => {
   const { status, turn } = state.board;
+  const { players } = state;
   return {
+    players,
     status,
     turn,
   };
