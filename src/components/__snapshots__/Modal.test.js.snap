@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component is rendering default 1`] = `
+<article
+  className="Modal new"
+>
+  <h1
+    className="big-banner"
+  />
+</article>
+`;
+
+exports[`Modal component is rendering draw message 1`] = `
+<article
+  className="Modal draw"
+>
+  <h1
+    className="big-banner"
+  >
+    Dang! It's a draw
+  </h1>
+</article>
+`;
+
+exports[`Modal component is rendering error message 1`] = `
+<article
+  className="Modal wrong_move"
+>
+  <h1
+    className="big-banner"
+  >
+    Sorry! This box was taken long ago
+  </h1>
+</article>
+`;
+
+exports[`Modal component is rendering player 1 winner message 1`] = `
+<article
+  className="Modal winner-0"
+>
+  <h1
+    className="big-banner"
+  >
+    juan WINS
+  </h1>
+</article>
+`;
+
+exports[`Modal component is rendering player 2 winner message 1`] = `
+<article
+  className="Modal winner-1"
+>
+  <h1
+    className="big-banner"
+  >
+    camilo WINS
+  </h1>
+</article>
+`;

@@ -4,39 +4,39 @@ exports[`Board component is rendering default 1`] = `
 <div
   className="Board"
 >
-  <Field
+  <Connect(Field)
     id={0}
     key="0"
   />
-  <Field
+  <Connect(Field)
     id={1}
     key="1"
   />
-  <Field
+  <Connect(Field)
     id={2}
     key="2"
   />
-  <Field
+  <Connect(Field)
     id={3}
     key="3"
   />
-  <Field
+  <Connect(Field)
     id={4}
     key="4"
   />
-  <Field
+  <Connect(Field)
     id={5}
     key="5"
   />
-  <Field
+  <Connect(Field)
     id={6}
     key="6"
   />
-  <Field
+  <Connect(Field)
     id={7}
     key="7"
   />
-  <Field
+  <Connect(Field)
     id={8}
     key="8"
   />

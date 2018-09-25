@@ -10,14 +10,13 @@
  *  - resetting or starting a new game
  */
 import { identity } from 'ramda';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import { board } from './reducers/board';
 
 /* eslint-disable-next-line no-underscore-dangle */
 const devtoolExtension = (process.env.NODE_ENV !== 'production' && window.__REDUX_DEVTOOLS_EXTENSION__) || identity;
 
-const gameReducer = (state = {}, action) => { // eslint-disable-line
-  // to be implemented
-};
+const gameReducer = combineReducers({ board });
 
 export default createStore(
   gameReducer,

@@ -1,4 +1,4 @@
-import { board, INITIAL_STATE, checkWinner } from './board';
+import { board, INITIAL_STATE } from './board';
 import { SET_MOVE, SET_NEW_GAME, SET_STATUS } from '../actions/board';
 
 describe('board reducer', () => {

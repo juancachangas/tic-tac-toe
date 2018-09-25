@@ -36,7 +36,7 @@ export const board = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         status: payload.status,
-      }
+      };
     }
     case SET_NEW_GAME: {
       return { ...INITIAL_STATE };

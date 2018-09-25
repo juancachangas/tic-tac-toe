@@ -8,21 +8,52 @@
  * Check out the src/index.html for pre-defined basic css classes.
  */
 import React from 'react';
+import { connect } from 'react-redux';
+import { setMove as move, checkWinner as setStatus } from '../store/actions/board';
 
-const Field = ({
+export const Field = ({
   id,
-  checkedBy = undefined,
+  field,
+  status,
+  setMove,
+  checkWinner,
 }) => {
-  const isPlayer = checkedBy && checkedBy < 2 ? `is-player-${checkedBy}` : '';
+  const isPlayer = field && field < 2 ? `is-player-${field}` : '';
   return (
     <div
       className={`Field ${isPlayer}`}
       role="presentation"
-
+      onClick={() => {
+        switch (status) {
+          case 'new':
+          case 'playing':
+          case 'wrong_move': {
+            setMove(id);
+            checkWinner();
+            break;
+          }
+          default: {
+            break;
+          }
+        }
+      }}
     >
       {id}
     </div>
   );
 };
-
-export default Field;
+export const mapStateToProps = (state, ownProps) => {
+  const { status, turn, fields } = state.board;
+  const field = fields[ownProps.id];
+  return {
+    fields,
+    status,
+    turn,
+    field,
+  };
+};
+export const mapDispatchToProps = dispatch => ({
+  setMove: position => dispatch(move(position)),
+  checkWinner: () => dispatch(setStatus()),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(Field);

@@ -3,6 +3,7 @@
 exports[`Field component is not rendering player move made by other players 1`] = `
 <div
   className="Field "
+  onClick={[Function]}
   role="presentation"
 >
   1
@@ -12,6 +13,7 @@ exports[`Field component is not rendering player move made by other players 1`] 
 exports[`Field component is rendering default 1`] = `
 <div
   className="Field "
+  onClick={[Function]}
   role="presentation"
 >
   1
@@ -21,6 +23,7 @@ exports[`Field component is rendering default 1`] = `
 exports[`Field component is rendering player 0 move 1`] = `
 <div
   className="Field is-player-0"
+  onClick={[Function]}
   role="presentation"
 >
   1
@@ -30,6 +33,7 @@ exports[`Field component is rendering player 0 move 1`] = `
 exports[`Field component is rendering player 1 move 1`] = `
 <div
   className="Field is-player-1"
+  onClick={[Function]}
   role="presentation"
 >
   1
