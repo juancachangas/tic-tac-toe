@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game component is rendering default 1`] = `
+<div>
+  <header>
+    TicTacToe
+  </header>
+  <div
+    className="Game"
+  >
+    <Board />
+  </div>
+</div>
+`;

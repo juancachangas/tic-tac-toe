@@ -17,6 +17,4 @@ const Game = () => (
   </div>
 );
 
-export default connect(
-  // do be implemented
-)(Game);
+export default Game;

@@ -11,13 +11,18 @@ import React from 'react';
 
 const Field = ({
   id,
-}) => (
-  <div
-    className="Field"
-    role="presentation"
-  >
-    {id}
-  </div>
-);
+  checkedBy = undefined,
+}) => {
+  const isPlayer = checkedBy && checkedBy < 2 ? `is-player-${checkedBy}` : '';
+  return (
+    <div
+      className={`Field ${isPlayer}`}
+      role="presentation"
+
+    >
+      {id}
+    </div>
+  );
+};
 
 export default Field;

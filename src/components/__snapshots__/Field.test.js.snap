@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field component is not rendering player move made by other players 1`] = `
+<div
+  className="Field "
+  role="presentation"
+>
+  1
+</div>
+`;
+
+exports[`Field component is rendering default 1`] = `
+<div
+  className="Field "
+  role="presentation"
+>
+  1
+</div>
+`;
+
+exports[`Field component is rendering player 0 move 1`] = `
+<div
+  className="Field is-player-0"
+  role="presentation"
+>
+  1
+</div>
+`;
+
+exports[`Field component is rendering player 1 move 1`] = `
+<div
+  className="Field is-player-1"
+  role="presentation"
+>
+  1
+</div>
+`;

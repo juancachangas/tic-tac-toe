@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board component is rendering default 1`] = `
+<div
+  className="Board"
+>
+  <Field
+    id={0}
+    key="0"
+  />
+  <Field
+    id={1}
+    key="1"
+  />
+  <Field
+    id={2}
+    key="2"
+  />
+  <Field
+    id={3}
+    key="3"
+  />
+  <Field
+    id={4}
+    key="4"
+  />
+  <Field
+    id={5}
+    key="5"
+  />
+  <Field
+    id={6}
+    key="6"
+  />
+  <Field
+    id={7}
+    key="7"
+  />
+  <Field
+    id={8}
+    key="8"
+  />
+</div>
+`;
