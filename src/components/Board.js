@@ -1,11 +1,11 @@
 import React from 'react';
-import Field from './Field';
+import FieldBox from './Field';
 
 const fieldsArray = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
 const Board = () => (
   <div className="Board">
-    {fieldsArray.map(id => <Field id={id} key={id} />)}
+    {fieldsArray.map(id => <FieldBox id={id} key={id} />)}
   </div>
 );
 
