@@ -11,7 +11,7 @@ describe('InputModal component is', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
-  it('rendering seccondPlayer', () => {
+  it('rendering secondPlayer', () => {
     const wrapper = shallow(
       <InputModal players={['player1']} />,
     );

@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addPlayer as setPlayer } from '../store/actions/players';
 
-class InputModal extends Component {
+export default class InputModal extends Component {
   constructor() {
     super();
     this.state = {

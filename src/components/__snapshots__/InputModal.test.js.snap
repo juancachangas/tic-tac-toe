@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputModal component is rendering default 1`] = `
+<article
+  className="Modal winner-0"
+>
+  <label
+    htmlFor="player-name"
+    id="player-name-text"
+  >
+    Player name:
+    <input
+      id="player-name"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+  </label>
+  <button
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Add +
+  </button>
+</article>
+`;
+
+exports[`InputModal component is rendering secondPlayer 1`] = `
+<article
+  className="Modal winner-1"
+>
+  <label
+    htmlFor="player-name"
+    id="player-name-text"
+  >
+    Player name:
+    <input
+      id="player-name"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+  </label>
+  <button
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Add +
+  </button>
+</article>
+`;
